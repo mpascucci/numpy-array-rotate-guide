@@ -1,6 +1,8 @@
 # A short tutorial on array reshape and rotation
-
 Array reshaping and rotation can be confusing. in this short guide I will try to visualize what happens when using the numpy functions corresponding to these operations.
+
+(Check the more readable [HTML version of this document](https://mpascucci.github.io/numpy-array-rotate-guide/index.html))
+
 
 
 ```python
