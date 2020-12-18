@@ -17,7 +17,7 @@ from html_3d_array import asvolume
 ```python
 # Skip this cell.
 # Build an array for this tutorial.
-l=['♥','♦','♣','♠']
+l=['♥','♣','♦','♠']
 # l=[x for x in l]
 p=np.vstack((l,l,l))
 a=np.stack((p,p),axis=1)
@@ -35,14 +35,14 @@ print("dimensions:", len(a.shape))
 # We can think o
 ```
 
-    [[['♥' '♦' '♣' '♠']
-      ['♥' '♦' '♣' '♠']]
+    [[['♥' '♣' '♦' '♠']
+      ['♥' '♣' '♦' '♠']]
     
-     [['♥' '♦' '♣' '♠']
-      ['♥' '♦' '♣' '♠']]
+     [['♥' '♣' '♦' '♠']
+      ['♥' '♣' '♦' '♠']]
     
-     [['♥' '♦' '♣' '♠']
-      ['♥' '♦' '♣' '♠']]]
+     [['♥' '♣' '♦' '♠']
+      ['♥' '♣' '♦' '♠']]]
     shape: (3, 2, 4)
     dimensions: 3
 
@@ -51,13 +51,11 @@ print("dimensions:", len(a.shape))
 ```python
 # reshape(...) gives a new shape to an array without changing its data.
 # The array dta is a flat sequence of characters registered somewhere in memory
-
-# this is a contiguous flattened version of array a
-data = a.ravel()
+data = a.flatten()
 print("data:", ''.join(data))
 ```
 
-    data: ♥♦♣♠♥♦♣♠♥♦♣♠♥♦♣♠♥♦♣♠♥♦♣♠
+    data: ♥♣♦♠♥♣♦♠♥♣♦♠♥♣♦♠♥♣♦♠♥♣♦♠
 
 
 An array can be reshaped only if the product of the dimensions is the same.
@@ -94,27 +92,27 @@ HTML(asvolume(a.reshape(i,j,k)))
 # and the same result can be obtained with np.moveaxis(a, 0, 1)
 ```
 
-    ♥♦♣♠
-    ♥♦♣♠
-    ♥♦♣♠
+    ♥♣♦♠
+    ♥♣♦♠
+    ♥♣♦♠
     
-    ♥♦♣♠
-    ♥♦♣♠
-    ♥♦♣♠
+    ♥♣♦♠
+    ♥♣♦♠
+    ♥♣♦♠
     
-    [[['♥' '♦' '♣' '♠']
-      ['♥' '♦' '♣' '♠']
-      ['♥' '♦' '♣' '♠']]
+    [[['♥' '♣' '♦' '♠']
+      ['♥' '♣' '♦' '♠']
+      ['♥' '♣' '♦' '♠']]
     
-     [['♥' '♦' '♣' '♠']
-      ['♥' '♦' '♣' '♠']
-      ['♥' '♦' '♣' '♠']]]
+     [['♥' '♣' '♦' '♠']
+      ['♥' '♣' '♦' '♠']
+      ['♥' '♣' '♦' '♠']]]
 
 
 
 
 
-<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
+<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
 
 
 
@@ -130,7 +128,7 @@ HTML(asvolume(a.swapaxes(0,2)))
 
 
 
-<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
+<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
 
 
 
@@ -150,20 +148,20 @@ print(a)
 HTML(asvolume(a))
 ```
 
-    [[['♥' '♦' '♣' '♠']
-      ['♥' '♦' '♣' '♠']]
+    [[['♥' '♣' '♦' '♠']
+      ['♥' '♣' '♦' '♠']]
     
-     [['♥' '♦' '♣' '♠']
-      ['♥' '♦' '♣' '♠']]
+     [['♥' '♣' '♦' '♠']
+      ['♥' '♣' '♦' '♠']]
     
-     [['♥' '♦' '♣' '♠']
-      ['♥' '♦' '♣' '♠']]]
+     [['♥' '♣' '♦' '♠']
+      ['♥' '♣' '♦' '♠']]]
 
 
 
 
 
-<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
+<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
 
 
 
@@ -192,30 +190,30 @@ b=a.swapaxes(0,2)
 print(b)
 
 # The array data has changed 
-print("data of array a:", ''.join(a.ravel()))
-print("data of array b:", ''.join(b.ravel()))
+print("data of array a:", ''.join(a.flatten()))
+print("data of array b:", ''.join(b.flatten()))
 HTML(asvolume(b))
 ```
 
     [[['♥' '♥' '♥']
       ['♥' '♥' '♥']]
     
-     [['♦' '♦' '♦']
-      ['♦' '♦' '♦']]
-    
      [['♣' '♣' '♣']
       ['♣' '♣' '♣']]
     
+     [['♦' '♦' '♦']
+      ['♦' '♦' '♦']]
+    
      [['♠' '♠' '♠']
       ['♠' '♠' '♠']]]
-    data of array a: ♥♦♣♠♥♦♣♠♥♦♣♠♥♦♣♠♥♦♣♠♥♦♣♠
-    data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠♠♠♠
+    data of array a: ♥♣♦♠♥♣♦♠♥♣♦♠♥♣♦♠♥♣♦♠♥♣♦♠
+    data of array b: ♥♥♥♥♥♥♣♣♣♣♣♣♦♦♦♦♦♦♠♠♠♠♠♠
 
 
 
 
 
-<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
+<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
 
 
 
@@ -235,11 +233,11 @@ HTML(asvolume(b))
     [[['♥' '♥' '♥']
       ['♥' '♥' '♥']]
     
-     [['♦' '♦' '♦']
-      ['♦' '♦' '♦']]
-    
      [['♣' '♣' '♣']
       ['♣' '♣' '♣']]
+    
+     [['♦' '♦' '♦']
+      ['♦' '♦' '♦']]
     
      [['♠' '♠' '♠']
       ['♠' '♠' '♠']]]
@@ -248,7 +246,7 @@ HTML(asvolume(b))
 
 
 
-<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
+<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
 
 
 
@@ -264,11 +262,11 @@ HTML(asvolume(b))
     [[['♠' '♠' '♠']
       ['♠' '♠' '♠']]
     
-     [['♣' '♣' '♣']
-      ['♣' '♣' '♣']]
-    
      [['♦' '♦' '♦']
       ['♦' '♦' '♦']]
+    
+     [['♣' '♣' '♣']
+      ['♣' '♣' '♣']]
     
      [['♥' '♥' '♥']
       ['♥' '♥' '♥']]]
@@ -277,7 +275,7 @@ HTML(asvolume(b))
 
 
 
-<table><tr style='padding:3px!'><td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td></tr></table>
+<table><tr style='padding:3px!'><td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td></tr></table>
 
 
 
@@ -293,13 +291,13 @@ HTML(asvolume(c))
       ['♠' '♠']
       ['♠' '♠']]
     
-     [['♣' '♣']
-      ['♣' '♣']
-      ['♣' '♣']]
-    
      [['♦' '♦']
       ['♦' '♦']
       ['♦' '♦']]
+    
+     [['♣' '♣']
+      ['♣' '♣']
+      ['♣' '♣']]
     
      [['♥' '♥']
       ['♥' '♥']
@@ -309,7 +307,7 @@ HTML(asvolume(c))
 
 
 
-<table><tr style='padding:3px!'><td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td></tr></table>
+<table><tr style='padding:3px!'><td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td></tr></table>
 
 
 
@@ -327,13 +325,13 @@ HTML(asvolume(b))
       ['♥' '♥']
       ['♥' '♥']]
     
-     [['♦' '♦']
-      ['♦' '♦']
-      ['♦' '♦']]
-    
      [['♣' '♣']
       ['♣' '♣']
       ['♣' '♣']]
+    
+     [['♦' '♦']
+      ['♦' '♦']
+      ['♦' '♦']]
     
      [['♠' '♠']
       ['♠' '♠']
@@ -343,7 +341,7 @@ HTML(asvolume(b))
 
 
 
-<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
+<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
 
 
 

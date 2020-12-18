@@ -14277,7 +14277,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
@@ -14293,12 +14293,12 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Skip this cell.</span>
 <span class="c1"># Build an array for this tutorial.</span>
-<span class="n">l</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;♥&#39;</span><span class="p">,</span><span class="s1">&#39;♦&#39;</span><span class="p">,</span><span class="s1">&#39;♣&#39;</span><span class="p">,</span><span class="s1">&#39;♠&#39;</span><span class="p">]</span>
+<span class="n">l</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;♥&#39;</span><span class="p">,</span><span class="s1">&#39;♣&#39;</span><span class="p">,</span><span class="s1">&#39;♦&#39;</span><span class="p">,</span><span class="s1">&#39;♠&#39;</span><span class="p">]</span>
 <span class="c1"># l=[x for x in l]</span>
 <span class="n">p</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">l</span><span class="p">,</span><span class="n">l</span><span class="p">,</span><span class="n">l</span><span class="p">))</span>
 <span class="n">a</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">((</span><span class="n">p</span><span class="p">,</span><span class="n">p</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -14317,7 +14317,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># The tutorial starts with this 3D array</span>
@@ -14345,14 +14345,14 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[[[&#39;♥&#39; &#39;♦&#39; &#39;♣&#39; &#39;♠&#39;]
-  [&#39;♥&#39; &#39;♦&#39; &#39;♣&#39; &#39;♠&#39;]]
+<pre>[[[&#39;♥&#39; &#39;♣&#39; &#39;♦&#39; &#39;♠&#39;]
+  [&#39;♥&#39; &#39;♣&#39; &#39;♦&#39; &#39;♠&#39;]]
 
- [[&#39;♥&#39; &#39;♦&#39; &#39;♣&#39; &#39;♠&#39;]
-  [&#39;♥&#39; &#39;♦&#39; &#39;♣&#39; &#39;♠&#39;]]
+ [[&#39;♥&#39; &#39;♣&#39; &#39;♦&#39; &#39;♠&#39;]
+  [&#39;♥&#39; &#39;♣&#39; &#39;♦&#39; &#39;♠&#39;]]
 
- [[&#39;♥&#39; &#39;♦&#39; &#39;♣&#39; &#39;♠&#39;]
-  [&#39;♥&#39; &#39;♦&#39; &#39;♣&#39; &#39;♠&#39;]]]
+ [[&#39;♥&#39; &#39;♣&#39; &#39;♦&#39; &#39;♠&#39;]
+  [&#39;♥&#39; &#39;♣&#39; &#39;♦&#39; &#39;♠&#39;]]]
 shape: (3, 2, 4)
 dimensions: 3
 </pre>
@@ -14366,14 +14366,12 @@ dimensions: 3
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># reshape(...) gives a new shape to an array without changing its data.</span>
 <span class="c1"># The array dta is a flat sequence of characters registered somewhere in memory</span>
-
-<span class="c1"># this is a contiguous flattened version of array a</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;data:&quot;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
 </pre></div>
 
@@ -14394,7 +14392,7 @@ dimensions: 3
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>data: ♥♦♣♠♥♦♣♠♥♦♣♠♥♦♣♠♥♦♣♠♥♦♣♠
+<pre>data: ♥♣♦♠♥♣♦♠♥♣♦♠♥♣♦♠♥♣♦♠♥♣♦♠
 </pre>
 </div>
 </div>
@@ -14462,21 +14460,21 @@ for example:</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>♥♦♣♠
-♥♦♣♠
-♥♦♣♠
+<pre>♥♣♦♠
+♥♣♦♠
+♥♣♦♠
 
-♥♦♣♠
-♥♦♣♠
-♥♦♣♠
+♥♣♦♠
+♥♣♦♠
+♥♣♦♠
 
-[[[&#39;♥&#39; &#39;♦&#39; &#39;♣&#39; &#39;♠&#39;]
-  [&#39;♥&#39; &#39;♦&#39; &#39;♣&#39; &#39;♠&#39;]
-  [&#39;♥&#39; &#39;♦&#39; &#39;♣&#39; &#39;♠&#39;]]
+[[[&#39;♥&#39; &#39;♣&#39; &#39;♦&#39; &#39;♠&#39;]
+  [&#39;♥&#39; &#39;♣&#39; &#39;♦&#39; &#39;♠&#39;]
+  [&#39;♥&#39; &#39;♣&#39; &#39;♦&#39; &#39;♠&#39;]]
 
- [[&#39;♥&#39; &#39;♦&#39; &#39;♣&#39; &#39;♠&#39;]
-  [&#39;♥&#39; &#39;♦&#39; &#39;♣&#39; &#39;♠&#39;]
-  [&#39;♥&#39; &#39;♦&#39; &#39;♣&#39; &#39;♠&#39;]]]
+ [[&#39;♥&#39; &#39;♣&#39; &#39;♦&#39; &#39;♠&#39;]
+  [&#39;♥&#39; &#39;♣&#39; &#39;♦&#39; &#39;♠&#39;]
+  [&#39;♥&#39; &#39;♣&#39; &#39;♦&#39; &#39;♠&#39;]]]
 </pre>
 </div>
 </div>
@@ -14489,7 +14487,7 @@ for example:</p>
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
+<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
 </div>
 
 </div>
@@ -14532,7 +14530,7 @@ for example:</p>
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
+<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
 </div>
 
 </div>
@@ -14585,14 +14583,14 @@ for example:</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[[[&#39;♥&#39; &#39;♦&#39; &#39;♣&#39; &#39;♠&#39;]
-  [&#39;♥&#39; &#39;♦&#39; &#39;♣&#39; &#39;♠&#39;]]
+<pre>[[[&#39;♥&#39; &#39;♣&#39; &#39;♦&#39; &#39;♠&#39;]
+  [&#39;♥&#39; &#39;♣&#39; &#39;♦&#39; &#39;♠&#39;]]
 
- [[&#39;♥&#39; &#39;♦&#39; &#39;♣&#39; &#39;♠&#39;]
-  [&#39;♥&#39; &#39;♦&#39; &#39;♣&#39; &#39;♠&#39;]]
+ [[&#39;♥&#39; &#39;♣&#39; &#39;♦&#39; &#39;♠&#39;]
+  [&#39;♥&#39; &#39;♣&#39; &#39;♦&#39; &#39;♠&#39;]]
 
- [[&#39;♥&#39; &#39;♦&#39; &#39;♣&#39; &#39;♠&#39;]
-  [&#39;♥&#39; &#39;♦&#39; &#39;♣&#39; &#39;♠&#39;]]]
+ [[&#39;♥&#39; &#39;♣&#39; &#39;♦&#39; &#39;♠&#39;]
+  [&#39;♥&#39; &#39;♣&#39; &#39;♦&#39; &#39;♠&#39;]]]
 </pre>
 </div>
 </div>
@@ -14605,7 +14603,7 @@ for example:</p>
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
+<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
 </div>
 
 </div>
@@ -14638,7 +14636,7 @@ for example:</p>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># swapaxis can do wathever volume rotation. It interchanges two axes of an array.</span>
@@ -14648,8 +14646,8 @@ for example:</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 
 <span class="c1"># The array data has changed </span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;data of array a:&quot;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">ravel</span><span class="p">()))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;data of array b:&quot;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">b</span><span class="o">.</span><span class="n">ravel</span><span class="p">()))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;data of array a:&quot;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">flatten</span><span class="p">()))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;data of array b:&quot;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">b</span><span class="o">.</span><span class="n">flatten</span><span class="p">()))</span>
 <span class="n">HTML</span><span class="p">(</span><span class="n">asvolume</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
 </pre></div>
 
@@ -14673,16 +14671,16 @@ for example:</p>
 <pre>[[[&#39;♥&#39; &#39;♥&#39; &#39;♥&#39;]
   [&#39;♥&#39; &#39;♥&#39; &#39;♥&#39;]]
 
- [[&#39;♦&#39; &#39;♦&#39; &#39;♦&#39;]
-  [&#39;♦&#39; &#39;♦&#39; &#39;♦&#39;]]
-
  [[&#39;♣&#39; &#39;♣&#39; &#39;♣&#39;]
   [&#39;♣&#39; &#39;♣&#39; &#39;♣&#39;]]
 
+ [[&#39;♦&#39; &#39;♦&#39; &#39;♦&#39;]
+  [&#39;♦&#39; &#39;♦&#39; &#39;♦&#39;]]
+
  [[&#39;♠&#39; &#39;♠&#39; &#39;♠&#39;]
   [&#39;♠&#39; &#39;♠&#39; &#39;♠&#39;]]]
-data of array a: ♥♦♣♠♥♦♣♠♥♦♣♠♥♦♣♠♥♦♣♠♥♦♣♠
-data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠♠♠♠
+data of array a: ♥♣♦♠♥♣♦♠♥♣♦♠♥♣♦♠♥♣♦♠♥♣♦♠
+data of array b: ♥♥♥♥♥♥♣♣♣♣♣♣♦♦♦♦♦♦♠♠♠♠♠♠
 </pre>
 </div>
 </div>
@@ -14690,12 +14688,12 @@ data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
+<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
 </div>
 
 </div>
@@ -14741,11 +14739,11 @@ data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠
 <pre>[[[&#39;♥&#39; &#39;♥&#39; &#39;♥&#39;]
   [&#39;♥&#39; &#39;♥&#39; &#39;♥&#39;]]
 
- [[&#39;♦&#39; &#39;♦&#39; &#39;♦&#39;]
-  [&#39;♦&#39; &#39;♦&#39; &#39;♦&#39;]]
-
  [[&#39;♣&#39; &#39;♣&#39; &#39;♣&#39;]
   [&#39;♣&#39; &#39;♣&#39; &#39;♣&#39;]]
+
+ [[&#39;♦&#39; &#39;♦&#39; &#39;♦&#39;]
+  [&#39;♦&#39; &#39;♦&#39; &#39;♦&#39;]]
 
  [[&#39;♠&#39; &#39;♠&#39; &#39;♠&#39;]
   [&#39;♠&#39; &#39;♠&#39; &#39;♠&#39;]]]
@@ -14761,7 +14759,7 @@ data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
+<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
 </div>
 
 </div>
@@ -14773,7 +14771,7 @@ data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># we can rotate in the opporsite direction and look the volume from behind</span>
@@ -14803,11 +14801,11 @@ data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠
 <pre>[[[&#39;♠&#39; &#39;♠&#39; &#39;♠&#39;]
   [&#39;♠&#39; &#39;♠&#39; &#39;♠&#39;]]
 
- [[&#39;♣&#39; &#39;♣&#39; &#39;♣&#39;]
-  [&#39;♣&#39; &#39;♣&#39; &#39;♣&#39;]]
-
  [[&#39;♦&#39; &#39;♦&#39; &#39;♦&#39;]
   [&#39;♦&#39; &#39;♦&#39; &#39;♦&#39;]]
+
+ [[&#39;♣&#39; &#39;♣&#39; &#39;♣&#39;]
+  [&#39;♣&#39; &#39;♣&#39; &#39;♣&#39;]]
 
  [[&#39;♥&#39; &#39;♥&#39; &#39;♥&#39;]
   [&#39;♥&#39; &#39;♥&#39; &#39;♥&#39;]]]
@@ -14818,12 +14816,12 @@ data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<table><tr style='padding:3px!'><td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td></tr></table>
+<table><tr style='padding:3px!'><td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td></tr></table>
 </div>
 
 </div>
@@ -14835,7 +14833,7 @@ data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># then we might want to rotate it on its front face</span>
@@ -14865,13 +14863,13 @@ data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠
   [&#39;♠&#39; &#39;♠&#39;]
   [&#39;♠&#39; &#39;♠&#39;]]
 
- [[&#39;♣&#39; &#39;♣&#39;]
-  [&#39;♣&#39; &#39;♣&#39;]
-  [&#39;♣&#39; &#39;♣&#39;]]
-
  [[&#39;♦&#39; &#39;♦&#39;]
   [&#39;♦&#39; &#39;♦&#39;]
   [&#39;♦&#39; &#39;♦&#39;]]
+
+ [[&#39;♣&#39; &#39;♣&#39;]
+  [&#39;♣&#39; &#39;♣&#39;]
+  [&#39;♣&#39; &#39;♣&#39;]]
 
  [[&#39;♥&#39; &#39;♥&#39;]
   [&#39;♥&#39; &#39;♥&#39;]
@@ -14883,12 +14881,12 @@ data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<table><tr style='padding:3px!'><td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td></tr></table>
+<table><tr style='padding:3px!'><td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td></tr></table>
 </div>
 
 </div>
@@ -14900,7 +14898,7 @@ data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Finally, the most powerful einsum</span>
@@ -14932,13 +14930,13 @@ data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠
   [&#39;♥&#39; &#39;♥&#39;]
   [&#39;♥&#39; &#39;♥&#39;]]
 
- [[&#39;♦&#39; &#39;♦&#39;]
-  [&#39;♦&#39; &#39;♦&#39;]
-  [&#39;♦&#39; &#39;♦&#39;]]
-
  [[&#39;♣&#39; &#39;♣&#39;]
   [&#39;♣&#39; &#39;♣&#39;]
   [&#39;♣&#39; &#39;♣&#39;]]
+
+ [[&#39;♦&#39; &#39;♦&#39;]
+  [&#39;♦&#39; &#39;♦&#39;]
+  [&#39;♦&#39; &#39;♦&#39;]]
 
  [[&#39;♠&#39; &#39;♠&#39;]
   [&#39;♠&#39; &#39;♠&#39;]
@@ -14950,12 +14948,12 @@ data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
+<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
 </div>
 
 </div>
@@ -14972,7 +14970,7 @@ data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># transform array &#39;u&#39; (2D) into array &#39;v&#39; (3D)</span>
@@ -15029,7 +15027,7 @@ data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
 
 
 
@@ -15046,7 +15044,7 @@ data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># let&#39;s first reshape &#39;a&#39; into a 3D shape</span>
@@ -15095,7 +15093,7 @@ data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
 
 
 
@@ -15112,7 +15110,7 @@ data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># now what we have to do is just rotate the volume</span>
@@ -15160,7 +15158,7 @@ data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
 
 
 
@@ -15182,7 +15180,7 @@ data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">u</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">22</span><span class="p">]</span><span class="o">*</span><span class="mi">15</span><span class="p">,</span> <span class="p">[</span><span class="mi">27</span><span class="p">]</span><span class="o">*</span><span class="mi">15</span><span class="p">,</span> <span class="p">[</span><span class="mi">32</span><span class="p">]</span><span class="o">*</span><span class="mi">15</span><span class="p">,</span> <span class="p">[</span><span class="mi">37</span><span class="p">]</span><span class="o">*</span><span class="mi">15</span><span class="p">])</span>
@@ -15203,7 +15201,7 @@ data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 
 
 
@@ -15220,7 +15218,7 @@ data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="n">asvolume</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">rot90</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="n">axes</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)),</span> <span class="n">color</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
@@ -15239,7 +15237,7 @@ data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 
 
 
