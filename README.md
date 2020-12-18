@@ -51,7 +51,9 @@ print("dimensions:", len(a.shape))
 ```python
 # reshape(...) gives a new shape to an array without changing its data.
 # The array dta is a flat sequence of characters registered somewhere in memory
-data = a.flatten()
+
+# this is a contiguous flattened version of array a
+data = a.ravel()
 print("data:", ''.join(data))
 ```
 
@@ -190,8 +192,8 @@ b=a.swapaxes(0,2)
 print(b)
 
 # The array data has changed 
-print("data of array a:", ''.join(a.flatten()))
-print("data of array b:", ''.join(b.flatten()))
+print("data of array a:", ''.join(a.ravel()))
+print("data of array b:", ''.join(b.ravel()))
 HTML(asvolume(b))
 ```
 
