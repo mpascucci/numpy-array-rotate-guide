@@ -1,8 +1,10 @@
 # A short tutorial on array reshape and rotation
+
+by [Marco Pascucci](https://github.com/mpascucci)
+
+Please consider the more readable [HTML version of this document](https://mpascucci.github.io/numpy-array-rotate-guide/index.html)
+
 Array reshaping and rotation can be confusing. in this short guide I will try to visualize what happens when using the numpy functions corresponding to these operations.
-
-(Check the more readable [HTML version of this document](https://mpascucci.github.io/numpy-array-rotate-guide/index.html))
-
 
 
 ```python
@@ -186,6 +188,10 @@ A ciclical shift of the axes corresponds to two successive swapping on two ortho
 # 3,2,4 -> 4,2,3
 b=a.swapaxes(0,2)
 print(b)
+
+# The array data has changed 
+print("data of array a:", ''.join(a.flatten()))
+print("data of array b:", ''.join(b.flatten()))
 HTML(asvolume(b))
 ```
 
@@ -200,6 +206,8 @@ HTML(asvolume(b))
     
      [['♠' '♠' '♠']
       ['♠' '♠' '♠']]]
+    data of array a: ♥♦♣♠♥♦♣♠♥♦♣♠♥♦♣♠♥♦♣♠♥♦♣♠
+    data of array b: ♥♥♥♥♥♥♦♦♦♦♦♦♣♣♣♣♣♣♠♠♠♠♠♠
 
 
 
