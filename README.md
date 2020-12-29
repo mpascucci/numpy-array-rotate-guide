@@ -118,20 +118,6 @@ HTML(asvolume(a.reshape(i,j,k)))
 
 What `reshape` does is just "cut the array data according to the values ijk".
 
-Fr example, we can not obtain the following volume by only reshaping 'a'... Try if you don't believe me.
-
-
-```python
-HTML(asvolume(a.swapaxes(0,2)))
-```
-
-
-
-
-<table><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:red>♥</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:blue>♣</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:green>♦</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr><tr style='padding:3px!'><td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>&nbsp</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td>&nbsp<td style=padding:3px><text style=color:black>♠</text></td></tr></table>
-
-
-
 # 3D volume rotation
 
 Take your time to learn to visualize 3D arrays as volumes.
